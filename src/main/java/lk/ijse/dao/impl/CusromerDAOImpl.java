@@ -51,7 +51,7 @@ public class CusromerDAOImpl implements CustomerDAO {
         Session session = FactoryConfiguration.getInstance().getSession();
         Transaction tx = session.beginTransaction();
 
-        NativeQuery query = session.createNativeQuery("delete from Customer where id=:id");
+        NativeQuery query = session.createNativeQuery("delete from Customer where id=?1");
         query.setParameter(1, id);
         query.executeUpdate();
 
