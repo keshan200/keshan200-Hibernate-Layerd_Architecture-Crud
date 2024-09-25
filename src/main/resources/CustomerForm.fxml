@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="541.0" prefWidth="737.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.CustomerFormController">
+   <children>
+      <TextField fx:id="txtID" layoutX="249.0" layoutY="129.0" prefHeight="35.0" prefWidth="209.0" />
+      <Text layoutX="83.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customre Address : ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#08cc0f" layoutX="226.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Form" wrappingWidth="284.96563720703125">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Text>
+      <JFXButton layoutX="566.0" layoutY="128.0" onAction="#btnSave" prefHeight="28.0" prefWidth="82.0" style="-fx-background-color: #76b5c5;" text="Save">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="566.0" layoutY="265.0" onAction="#btnDelete" prefHeight="28.0" prefWidth="82.0" style="-fx-background-color: #AF1C1C;" text="Delete">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="566.0" layoutY="199.0" onAction="#btnUpdate" prefHeight="28.0" prefWidth="82.0" style="-fx-background-color: #F7BD2C;" text="Update">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="txtAdrs" layoutX="249.0" layoutY="261.0" prefHeight="35.0" prefWidth="209.0" />
+      <TextField fx:id="txtName" layoutX="249.0" layoutY="195.0" prefHeight="35.0" prefWidth="209.0" />
+      <Text layoutX="83.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customre ID:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customre Name :">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblCustomer" layoutX="67.0" layoutY="327.0" prefHeight="200.0" prefWidth="622.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="156.79998779296875" text="Customer ID" />
+          <TableColumn fx:id="colName" prefWidth="237.6000213623047" text="Customer Name" />
+            <TableColumn fx:id="colAdrs" prefWidth="227.199951171875" text="Customer Address" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
